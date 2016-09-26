@@ -1,7 +1,7 @@
 package axl.com.aframetest;
 
-import axl.com.aframe.kit.app.RxStarterApp;
 import axl.com.aframe.kit.retrofit.Network;
+import axl.com.aframe.ui.app.SupportApp;
 
 /**
  * User: Axl_Jacobs(Axl.Jacobs@gmail.com)
@@ -9,10 +9,11 @@ import axl.com.aframe.kit.retrofit.Network;
  * Time: 16:30
  * FIXME
  */
-public class AFTApp extends RxStarterApp {
+public class AFTApp extends SupportApp {
     @Override
     public void onCreate() {
         super.onCreate();
+        isDebug = true;
         new Network.Builder().networkDebug(true)
 //                .accept(Profile.API_ACCEPT)
                 .baseUrl(Profile.API_ENDPOINT)

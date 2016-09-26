@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AFrame.iml" filepath="$PROJECT_DIR$/AFrame.iml" />
       <module fileurl="file://$PROJECT_DIR$/AFrameKIT/AFrameKIT.iml" filepath="$PROJECT_DIR$/AFrameKIT/AFrameKIT.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AFrameTest/aframetest.iml" filepath="$PROJECT_DIR$/AFrameTest/aframetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AFrameTest/AFrameTest.iml" filepath="$PROJECT_DIR$/AFrameTest/AFrameTest.iml" />
     </modules>
   </component>
 </project>

@@ -7,7 +7,11 @@ package axl.com.aframetest.network;
  * FIXME
  */
 public interface URLS {
-    public static interface Weather{
-        public static final String  WEATHER_URL="/xiangji_weather/real_time_weather.php";
+    String URL_VERSION = "/v1";
+
+    interface Auth {
+        String AUTH_LOGIN_URL = URL_VERSION + "/rest/user/loginUser";
+        String AUTH_LOGIN_PARAM_PHONE = "phone";
+        String AUTH_LOGIN_PARAM_PASSWORD = "password";
     }
 }

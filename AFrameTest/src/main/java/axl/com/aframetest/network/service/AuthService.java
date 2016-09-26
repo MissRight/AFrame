@@ -1,9 +1,10 @@
 package axl.com.aframetest.network.service;
 
-import axl.com.aframetest.entity.User;
+import axl.com.aframetest.model.entity.BaseResult;
+import axl.com.aframetest.model.entity.User;
+import axl.com.aframetest.network.URLS;
 import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
-import retrofit2.http.POST;
+import retrofit2.http.GET;
 import rx.Observable;
 
 /**
@@ -17,13 +18,12 @@ public interface AuthService {
     /**
      * 登录接口
      *
-     * @param phone 手机号码
+     * @param phone    手机号码
      * @param password 密码
      * @return Call
      */
-    @FormUrlEncoded
-    @POST("/auth/login")
-    Observable<User>
-    login(@Field("phone") String phone,
-          @Field("password") String password);
+    @GET(URLS.Auth.AUTH_LOGIN_URL)
+    Observable<BaseResult<User>>
+    login(@Field(URLS.Auth.AUTH_LOGIN_PARAM_PHONE) String phone,
+          @Field(URLS.Auth.AUTH_LOGIN_PARAM_PASSWORD) String password);
 }

@@ -7,6 +7,6 @@ package axl.com.aframetest;
  * FIXME
  */
 public interface Profile {
-    String API_ENDPOINT = "http://v.juhe.cn";
+    String API_ENDPOINT = "https://api.ds.itjh.net";
     String API_ACCEPT = "application/vnd.fakerapi.v1.0+json";
 }
